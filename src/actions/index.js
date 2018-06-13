@@ -9,6 +9,7 @@ export const saveComment = comment => {
 };
 export const fetchComments = () => {
 	const res = axios.get('http://jsonplaceholder.typicode.com/comments');
+	console.log('testing')
 	
   return {
     type: FETCH_COMMENTS,
